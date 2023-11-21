@@ -16,7 +16,10 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <link rel="stylesheet" href="{{ asset('build/assets/app-a461d729.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-e0811564.css') }}">
+    <script src="{{ asset('build/assets/app-e5722a0f.js') }}"></script>
     @livewireStyles
 
 </head>

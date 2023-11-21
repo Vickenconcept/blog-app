@@ -1,8 +1,8 @@
 <x-app-layout>
-    <div class="p-5 lg:p-20">
-
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+    <div class="p-5 lg:p-20 space-y-4">
+        <h1 class="text-2xl font-semibold tracking-wider">My Blogs</h1>
+        <hr >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             @forelse ($blogs as $blog)
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="{{ route('blogs.show', ['blog' => $blog->id]) }}">
