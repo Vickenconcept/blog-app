@@ -5,8 +5,8 @@
             <p> By<span class="italic  font-semibold"> {{ $blog->author }} </span> on {{ $blog->created_at }}</p>
         </div>
 
-        <div class="w-full  h-96 overflow-hidden rounded-lg">
-            <img class="w-full object-contain  "
+        <div class="w-full  lg:h-[60vh] overflow-hidden rounded-lg">
+            <img class="w-full object-cover"
                 src="https://images.unsplash.com/photo-1700496462947-f772a716de6f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D"
                 alt="">
         </div>

@@ -26,8 +26,9 @@
         <x-header />
 
         {{ $slot }}
-        <x-footer />
+
     </div>
+    <x-footer />
 
     @livewireScripts
 

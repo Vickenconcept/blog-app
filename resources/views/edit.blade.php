@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="h-screen flex justify-center items-center">
+    <div class="h-screen flex justify-center items-center p-5">
         <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
 
             <form class="space-y-6" action="{{ route('blogs.update', ['blog' => $blog->id]) }}" method="post">
