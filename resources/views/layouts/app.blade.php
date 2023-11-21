@@ -23,12 +23,10 @@
 
 <body class="h-full">
     <div id="ap" class="min-h-screen bg-gray-50 text-gray-700" x-data="{ openHelp: false }">
-        <div class=" flex justify-end px-20 pt-10">
-            <a href="/" class="flex items-center px-3 py-1 rounded  bg-red-50"><i class='bx bxs-chevron-left'></i>
-                Back</a>
-        </div>
+        <x-header />
 
         {{ $slot }}
+        <x-footer />
     </div>
 
     @livewireScripts

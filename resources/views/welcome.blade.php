@@ -2,7 +2,7 @@
     <div class="p-20">
 
 
-        <div class="grid grid-cols-3 gap-5 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
             @forelse ($blogs as $blog)
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="{{ route('blogs.show', ['blog' => $blog->id]) }}">
@@ -11,10 +11,8 @@
                             alt="" />
                     </a>
                     <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 capitalize tracking-wider ">
-                                {{ $blog->title }}</h5>
-                        </a>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 capitalize tracking-wider ">
+                            {{ $blog->title }}</h5>
                         <p class="mb-3 font-normal text-gray-700 line-clamp-1">{{ $blog->content }}</p>
                         <a href="{{ route('blogs.show', ['blog' => $blog->id]) }}"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 ">
@@ -26,16 +24,16 @@
                             </svg>
                         </a>
                         <div class="flex justify-between">
-                            <p class="italic mt-3 text-gray-400">By {{ $blog->author }}</p>
+                            <p class="italic mt-3 text-gray-400">By {{ $blog->author }} </p>
                             <div class="flex">
                                 <a href="{{ route('blogs.edit', ['blog' => $blog->id]) }}">
                                     <button
                                         class="rounded-full bg-green-500 hover:bg-green-600  text-white px-2 py-1 hover:shadow hover:translate-y-1 duration-300 transition"><i
                                             class='bx bxs-edit-alt'></i></button>
                                 </a>
-                                <div class="relative" x-data="{ isOpen: false }">
+                                <div class="relative " x-data="{ isOpen: false }">
                                     <button @click="isOpen = true"
-                                        class="rounded-full bg-red-500 hover:bg-red-600  text-white p-2 hover:shadow hover:translate-y-1 duration-300 transition"><svg
+                                        class="rounded-full bg-red-500 hover:bg-red-600  mr-2 text-white p-2 hover:shadow hover:translate-y-1 duration-300 transition"><svg
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -52,6 +50,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{-- <span class="text-xs  text-gray-500">{{ $blog->created_at }}</span> --}}
                     </div>
                 </div>
 

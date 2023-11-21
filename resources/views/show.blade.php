@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <div class="w-full md:w-[80%] mx-auto px-5  py-10 space-y-8">
         <div>
             <h1 class="text-3xl font-bold uppercase tracking-widest underline mb-2">{{ $blog->title }}</h1>
